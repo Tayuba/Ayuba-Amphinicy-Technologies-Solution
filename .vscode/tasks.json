@@ -1,0 +1,48 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Prepare Debug Build",
+        "type": "shell",
+        "command": "if not exist ./build mkdir build && cmake -B ./build -DCMAKE_BUILD_TYPE=Debug",
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "Prepare Release Build",
+        "type": "shell",
+        "command": "if not exist ./build mkdir build && cmake -B ./build -DCMAKE_BUILD_TYPE=Release",
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        }
+      },
+      {
+        "label": "Build Debug",
+        "type": "shell",
+        "command": "cmake --build ./build --config Debug",
+        "dependsOn": "Prepare Debug Build",
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "Build Release",
+        "type": "shell",
+        "command": "cmake --build ./build --config Release",
+        "dependsOn": "Prepare Release Build",
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        }
+      }
+    ]
+  }
+  

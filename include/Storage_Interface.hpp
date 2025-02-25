@@ -1,0 +1,5 @@
+#ifndef STORAGE_INTERFACE_H
+#define STORAGE_INTERFACE_H
+
+
+#endif
