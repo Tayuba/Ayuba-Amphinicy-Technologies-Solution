@@ -1,5 +1,39 @@
+/**
+ * @file main.cpp
+ * @brief Entry point for the Library Management System.
+ * 
+ * This file contains the main function that runs the Library Management System.
+ * It provides an interactive menu for users to manage books in the library.
+ * 
+ * Data Structure Used: std::vector<Book_Interface>
+ * - Used to store book objects dynamically.
+ * - Efficient retrieval and updates.
+ * 
+ * @author Ayuba Tahiru
+ * @date 2025-02-25
+*/
+
+
 #include "Interfaces.hpp"
 
+
+/**
+ * @brief Main function that drives the Library Management System.
+ * 
+ * Provides an interactive menu where users can:
+ * 1- Add books
+ * 2- Remove books
+ * 3- Remove all books
+ * 4- Search for books
+ * 5- Borrow books
+ * 6- Return books
+ * 7- List all books
+ * 8- Exit the system
+ * 
+ * Handles user input validation to prevent incorrect entries.
+ * 
+ * @return int Returns 0 upon successful execution.
+*/
 int main() {
     Storage_Interface storage("data/book_DB.txt");
     Library_Interface library(storage);
