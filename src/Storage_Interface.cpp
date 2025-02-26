@@ -1,7 +1,37 @@
+/**
+ * @file Storage_Interface.cpp
+ * @brief Implementation of the Storage_Interface class.
+ * 
+ * This file implements methods for reading and writing book data to a file.
+ * It ensures that the library system's books are persistently stored between sessions.
+ * 
+ * Data Structure Used: std::vector<Book_Interface>
+ * - Uses dynamic storage in a vector for easy manipulation.
+ * - Reads and writes data using std::ifstream and std::ofstream.
+ * 
+*/
+
+
 #include "../include/Storage_Interface.hpp"
 
+
+/**
+ * @brief Constructs a Storage_Interface object with a specified storage file.
+ * 
+ * @param filename The name of the file used for storing book data.
+*/
 Storage_Interface::Storage_Interface(const std::string& filename) : storageFile(filename) {}
 
+
+/**
+ * @brief Loads books from the storage file into a vector.
+ * 
+ * Reads book data from the file, parses it, and constructs a vector of Book_Interface objects.
+ * 
+ * Complexity: O(n).
+ * 
+ * @return std::vector<Book_Interface> A list of books retrieved from storage.
+*/
 std::vector<Book_Interface> Storage_Interface::loadBooks() {
     std::vector<Book_Interface> books;
     std::ifstream file(storageFile);
@@ -12,7 +42,7 @@ std::vector<Book_Interface> Storage_Interface::loadBooks() {
 
     std::string line;
     bool isFirstLine = true;
-    
+
     while (std::getline(file, line)) {
         if (isFirstLine) {  
             isFirstLine = false;  
@@ -40,6 +70,16 @@ std::vector<Book_Interface> Storage_Interface::loadBooks() {
     return books;
 }
 
+
+/**
+ * @brief Saves a collection of books to the storage file.
+ * 
+ * Writes the book data to the file in a structured format to ensure persistence.
+ * 
+ * Complexity: O(n).
+ * 
+ * @param books A vector containing all books to be saved.
+*/
 void Storage_Interface::saveBooks(const std::vector<Book_Interface>& books) {
     std::ofstream file(storageFile, std::ios::trunc);
     if (!file) {
