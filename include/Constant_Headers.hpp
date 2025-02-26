@@ -5,5 +5,8 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <sstream> 
+#include <cctype>
+#include <algorithm> 
 
 #endif
