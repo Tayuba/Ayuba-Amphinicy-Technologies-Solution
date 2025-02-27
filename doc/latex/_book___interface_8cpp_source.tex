@@ -1,0 +1,49 @@
+\doxysection{Book\+\_\+\+Interface.\+cpp}
+\hypertarget{_book___interface_8cpp_source}{}\label{_book___interface_8cpp_source}\index{src/Book\_Interface.cpp@{src/Book\_Interface.cpp}}
+\mbox{\hyperlink{_book___interface_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_book___interface_8hpp}{../include/Book\_Interface.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00024}\mbox{\hyperlink{class_book___interface_aafb6247150a5ed616b301467145f6ad5}{00024}}\ \mbox{\hyperlink{class_book___interface_aafb6247150a5ed616b301467145f6ad5}{Book\_Interface::Book\_Interface}}(\textcolor{keyword}{const}\ std::string\&\ title,\ \textcolor{keyword}{const}\ std::string\&\ author,\ \textcolor{keywordtype}{int}\ year)}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00025}00025\ \ \ \ \ :\ title(title),\ author(author),\ year(year),\ isBorrowed(false)\ \{\}}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00027}00027\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00032}\mbox{\hyperlink{class_book___interface_ad1748dbf83065fb5213bf24703d76179}{00032}}\ std::string\ \mbox{\hyperlink{class_book___interface_ad1748dbf83065fb5213bf24703d76179}{Book\_Interface::getTitle}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{keywordflow}{return}\ title;}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00034}00034\ \}}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00041}\mbox{\hyperlink{class_book___interface_a4bc5750db08d7e47e2dc58b7e701d35c}{00041}}\ std::string\ \mbox{\hyperlink{class_book___interface_a4bc5750db08d7e47e2dc58b7e701d35c}{Book\_Interface::getAuthor}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{keywordflow}{return}\ author;}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00043}00043\ \}}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00051}\mbox{\hyperlink{class_book___interface_ade2b3ea2492c2bf5597404ffe2cda89d}{00051}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_book___interface_ade2b3ea2492c2bf5597404ffe2cda89d}{Book\_Interface::getBorrowedStatus}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00052}00052\ \ \ \ \ \textcolor{keywordflow}{return}\ isBorrowed;}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00053}00053\ \}}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00061}\mbox{\hyperlink{class_book___interface_a279840fb13e27deb89b1e83f1ed3131c}{00061}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_book___interface_a279840fb13e27deb89b1e83f1ed3131c}{Book\_Interface::borrowBook}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00062}00062\ \ \ \ \ isBorrowed\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00063}00063\ \}}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00071}\mbox{\hyperlink{class_book___interface_ae3e6bdb45b961ef3fac01cd07034fd6a}{00071}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_book___interface_ae3e6bdb45b961ef3fac01cd07034fd6a}{Book\_Interface::returnBook}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00072}00072\ \ \ \ \ isBorrowed\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00073}00073\ \}}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00080}\mbox{\hyperlink{class_book___interface_a039210c63b9635f63d4fde7de264384a}{00080}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_book___interface_a039210c63b9635f63d4fde7de264384a}{Book\_Interface::getYear}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00081}00081\ \ \ \ \ \textcolor{keywordflow}{return}\ year;}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00082}00082\ \}}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00084}00084\ \ }
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00089}\mbox{\hyperlink{class_book___interface_a8f56fc2953c34907656b02b1954c8e25}{00089}}\ std::string\ \mbox{\hyperlink{class_book___interface_a8f56fc2953c34907656b02b1954c8e25}{Book\_Interface::toString}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{keywordflow}{return}\ title\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ author\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ std::to\_string(year)\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ (isBorrowed\ ?\ \textcolor{stringliteral}{"{}1"{}}\ :\ \textcolor{stringliteral}{"{}0"{}});}
+\DoxyCodeLine{\Hypertarget{_book___interface_8cpp_source_l00091}00091\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,11 @@
+digraph "Book_Interface::borrowBook"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Book_Interface::borrowBook",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Marks the book as borrowed."];
+  Node1 -> Node2 [id="edge2_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Storage_Interface::\lloadBooks",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_storage___interface.html#a79e8e193c31fed0acd409b8413908c29",tooltip="Loads books from the storage file into a vector."];
+}

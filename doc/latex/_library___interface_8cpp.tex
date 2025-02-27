@@ -1,0 +1,59 @@
+\doxysection{src/\+Library\+\_\+\+Interface.cpp File Reference}
+\hypertarget{_library___interface_8cpp}{}\label{_library___interface_8cpp}\index{src/Library\_Interface.cpp@{src/Library\_Interface.cpp}}
+
+
+Implementation of the \doxylink{class_library___interface}{Library\+\_\+\+Interface} class.  
+
+
+{\ttfamily \#include "{}../include/\+Library\+\_\+\+Interface.\+hpp"{}}\newline
+Include dependency graph for Library\+\_\+\+Interface.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{_library___interface_8cpp_ad8200839a864ebdf2f129fbffa33967b}{to\+Lower\+Case}} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Converts a string to lowercase. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the \doxylink{class_library___interface}{Library\+\_\+\+Interface} class. 
+
+This file implements the methods for managing books within a library system. The class interacts with \doxylink{class_storage___interface}{Storage\+\_\+\+Interface} to persist book data. It provides functionalities such as adding, removing, searching, borrowing, and returning books.
+
+Data Structure Used\+: std\+::vector$<$\+Book\+\_\+\+Interface$>$
+\begin{DoxyItemize}
+\item Provides dynamic storage of books.
+\item Efficient appends (O(1)) but slow removals (O(n)). 
+\end{DoxyItemize}
+
+Definition in file \mbox{\hyperlink{_library___interface_8cpp_source}{Library\+\_\+\+Interface.\+cpp}}.
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_library___interface_8cpp_ad8200839a864ebdf2f129fbffa33967b}\index{Library\_Interface.cpp@{Library\_Interface.cpp}!toLowerCase@{toLowerCase}}
+\index{toLowerCase@{toLowerCase}!Library\_Interface.cpp@{Library\_Interface.cpp}}
+\doxysubsubsection{\texorpdfstring{toLowerCase()}{toLowerCase()}}
+{\footnotesize\ttfamily \label{_library___interface_8cpp_ad8200839a864ebdf2f129fbffa33967b} 
+std\+::string to\+Lower\+Case (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str}{}\end{DoxyParamCaption})}
+
+
+
+Converts a string to lowercase. 
+
+Complexity\+: O(n).
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Input string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string Lowercase version of input. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_library___interface_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{_library___interface_8cpp_source}{Library\+\_\+\+Interface.\+cpp}}.
+
+Here is the caller graph for this function\+:
+% FIG 1

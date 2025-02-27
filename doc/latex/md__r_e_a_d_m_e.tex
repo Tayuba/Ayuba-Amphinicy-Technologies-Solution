@@ -1,0 +1,207 @@
+\chapter{Ayuba-\/\+Amphinicy-\/\+Technologies-\/\+Solution}
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{Ayuba-\/Amphinicy-\/Technologies-\/Solution@{Ayuba-\/Amphinicy-\/Technologies-\/Solution}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Library Management System}{Library Management System}}\label{md__r_e_a_d_m_e_autotoc_md1}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{\texorpdfstring{Project Overview}{Project Overview}}\label{md__r_e_a_d_m_e_autotoc_md2}
+The {\bfseries{Library Management System}} is a C++ application that allows users to manage a collection of books. Users can perform operations such as adding, deleting, searching, and borrowing books. This project is structured for development in {\bfseries{Visual Studio Code}} and is built using {\bfseries{CMake}}.\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{\texorpdfstring{Workspace Structure}{Workspace Structure}}\label{md__r_e_a_d_m_e_autotoc_md3}
+The project workspace is named\+: {\bfseries{{\ttfamily AYUBA-\/\+AMPHINICY-\/\+TECHNOLOGIE-\/\+SOLUTIONS}}}\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsubsection{\texorpdfstring{Project Directory Structure}{Project Directory Structure}}\label{md__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{AYUBA-\/AMPHINICY-\/TECHNOLOGIE-\/SOLUTIONS/}
+\DoxyCodeLine{│──\ src/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Source\ files}
+\DoxyCodeLine{│\ \ \ ├──\ Book\_Interface.cpp}
+\DoxyCodeLine{│\ \ \ ├──\ Library\_Interface.cpp}
+\DoxyCodeLine{│\ \ \ ├──\ Storage\_Interface.cpp}
+\DoxyCodeLine{│}
+\DoxyCodeLine{│──\ include/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Header\ files}
+\DoxyCodeLine{│\ \ \ ├──\ Book\_Interface.hpp}
+\DoxyCodeLine{│\ \ \ ├──\ Constant\_Interface.hpp}
+\DoxyCodeLine{│\ \ \ ├──\ Library\_Interface.hpp}
+\DoxyCodeLine{│\ \ \ ├──\ Storage\_Interface.hpp}
+\DoxyCodeLine{│}
+\DoxyCodeLine{│──\ data/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Data\ storage}
+\DoxyCodeLine{│\ \ \ ├──\ book\_DB.txt\ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Database\ file\ for\ book\ records}
+\DoxyCodeLine{|}
+\DoxyCodeLine{|──\ doc/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Data\ storage}
+\DoxyCodeLine{│\ \ \ ├──\ project\_description.pdf\ \#\ Describes\ the\ tasks\ to\ do}
+\DoxyCodeLine{|\ \ \ ├──\ Doxygen\_Generated\ doc\ \ \ }
+\DoxyCodeLine{│}
+\DoxyCodeLine{│──\ .vscode/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ VS\ Code\ configuration}
+\DoxyCodeLine{│\ \ \ ├──\ launch.json\ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Debugging\ configurations}
+\DoxyCodeLine{│\ \ \ ├──\ settings.json\ \ \ \ \ \ \ \ \ \ \ \ \#\ VS\ Code\ settings}
+\DoxyCodeLine{│\ \ \ ├──\ tasks.json\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Build\ task\ configurations}
+\DoxyCodeLine{│}
+\DoxyCodeLine{│──\ main.cpp\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Main\ entry\ point\ of\ the\ application}
+\DoxyCodeLine{│──\ CMakeLists.txt\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ CMake\ configuration\ file}
+\DoxyCodeLine{│──\ README.md\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Project\ documentation}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{\texorpdfstring{Cloning or Downloading the Project}{Cloning or Downloading the Project}}\label{md__r_e_a_d_m_e_autotoc_md5}
+You can set up this project by {\bfseries{cloning from Git\+Hub}} or {\bfseries{downloading it manually}}.\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsubsection{\texorpdfstring{{\bfseries{Clone via Git\+Hub}} (Recommended)}{{\bfseries{Clone via Git\+Hub}} (Recommended)}}\label{md__r_e_a_d_m_e_autotoc_md6}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#\ Open\ a\ terminal\ and\ run:}
+\DoxyCodeLine{git\ clone\ https://github.com/YOUR\_GITHUB\_USERNAME/Library-\/Management-\/System.git}
+\DoxyCodeLine{cd\ Library-\/Management-\/System}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsubsection{\texorpdfstring{{\bfseries{Download Manually}}}{{\bfseries{Download Manually}}}}\label{md__r_e_a_d_m_e_autotoc_md7}
+
+\begin{DoxyEnumerate}
+\item Go to the {\bfseries{Git\+Hub repository}}.
+\item Click {\bfseries{Code → Download ZIP}}.
+\item Extract the ZIP file.
+\end{DoxyEnumerate}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysubsection{\texorpdfstring{Setting Up the Project in VS Code}{Setting Up the Project in VS Code}}\label{md__r_e_a_d_m_e_autotoc_md9}
+This project is configured and run {\bfseries{Visual Studio Code}} and uses {\bfseries{CMake}} for building and compiling, feel free to use Clion if that what you have.\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysubsubsection{\texorpdfstring{{\bfseries{Step 1\+: Install Prerequisites}}}{{\bfseries{Step 1\+: Install Prerequisites}}}}\label{md__r_e_a_d_m_e_autotoc_md10}
+Before you proceed, ensure that you have the following installed\+:
+\begin{DoxyItemize}
+\item {\bfseries{C++ Compiler}} (GCC, Clang, or MSVC)
+\item {\bfseries{CMake}} (version 3.\+17 or later)
+\item {\bfseries{Visual Studio Code}} (Latest version)
+\item {\bfseries{CMake Tools Extension for VS Code}}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md11}{}\doxysubsubsection{\texorpdfstring{{\bfseries{Step 2\+: Open the Project in VS Code}}}{{\bfseries{Step 2\+: Open the Project in VS Code}}}}\label{md__r_e_a_d_m_e_autotoc_md11}
+
+\begin{DoxyEnumerate}
+\item Open {\bfseries{Visual Studio Code}}.
+\item Click {\bfseries{File → Open Folder...}}.
+\item Select the folder {\bfseries{{\ttfamily AYUBA-\/\+AMPHINICY-\/\+TECHNOLOGIE-\/\+SOLUTIONS}}}.
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md12}{}\doxysubsubsection{\texorpdfstring{{\bfseries{Step 3\+: Configure .vscode/tasks.\+json and launch.\+json}}}{{\bfseries{Step 3\+: Configure .vscode/tasks.\+json and launch.\+json}}}}\label{md__r_e_a_d_m_e_autotoc_md12}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md13}{}\doxysubsubsubsection{\texorpdfstring{{\ttfamily tasks.\+json} (Defines build tasks for Debug and Release modes)}{{\ttfamily tasks.\+json} (Defines build tasks for Debug and Release modes)}}\label{md__r_e_a_d_m_e_autotoc_md13}
+
+\begin{DoxyEnumerate}
+\item Open {\bfseries{VS Code}} and navigate to {\ttfamily .vscode/tasks.\+json}.
+\item Ensure the following configuration is set\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ "{}version"{}:\ "{}2.0.0"{},}
+\DoxyCodeLine{\ \ \ \ "{}tasks"{}:\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}label"{}:\ "{}Prepare\ Debug\ Build"{},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}type"{}:\ "{}shell"{},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}command"{}:\ "{}if\ not\ exist\ ./build\ mkdir\ build\ \&\&\ cmake\ -\/B\ ./build\ -\/DCMAKE\_BUILD\_TYPE=Debug"{},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}problemMatcher"{}:\ [],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}group"{}:\ \{\ "{}kind"{}:\ "{}build"{},\ "{}isDefault"{}:\ true\ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}label"{}:\ "{}Build\ Debug"{},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}type"{}:\ "{}shell"{},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}command"{}:\ "{}cmake\ -\/-\/build\ ./build\ -\/-\/config\ Debug"{},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}dependsOn"{}:\ "{}Prepare\ Debug\ Build"{},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}problemMatcher"{}:\ [],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}group"{}:\ \{\ "{}kind"{}:\ "{}build"{},\ "{}isDefault"{}:\ true\ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ ]}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md14}{}\doxysubsubsubsection{\texorpdfstring{{\ttfamily launch.\+json} (Defines how the application runs in debug mode)}{{\ttfamily launch.\+json} (Defines how the application runs in debug mode)}}\label{md__r_e_a_d_m_e_autotoc_md14}
+
+\begin{DoxyEnumerate}
+\item Open {\bfseries{VS Code}} and navigate to {\ttfamily .vscode/launch.\+json}.
+\item Ensure the following configuration is set\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ "{}version"{}:\ "{}0.2.0"{},}
+\DoxyCodeLine{\ \ \ \ "{}configurations"{}:\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}name"{}:\ "{}Run\ Book\ (Debug)"{},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}type"{}:\ "{}cppvsdbg"{},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}request"{}:\ "{}launch"{},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}program"{}:\ "{}\$\{workspaceFolder\}/build/Debug/Book\_Library.exe"{},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}args"{}:\ [],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}stopAtEntry"{}:\ false,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}cwd"{}:\ "{}\$\{workspaceFolder\}"{},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}environment"{}:\ [],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}externalConsole"{}:\ true,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ "{}preLaunchTask"{}:\ "{}Build\ Debug"{}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ ]}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md15}{}\doxysubsubsection{\texorpdfstring{{\bfseries{Step 4\+: Configure CMake}}}{{\bfseries{Step 4\+: Configure CMake}}}}\label{md__r_e_a_d_m_e_autotoc_md15}
+
+\begin{DoxyEnumerate}
+\item Open {\bfseries{CMake\+Lists.\+txt}} and verify it contains\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cmake\_minimum\_required(VERSION\ 3.17)}
+\DoxyCodeLine{project(Book\_Library)}
+\DoxyCodeLine{set(CMAKE\_CXX\_STANDARD\ 20)}
+\DoxyCodeLine{add\_executable(Book\_Library\ main.cpp\ src/Book\_Interface.cpp\ src/Library\_Interface.cpp\ src/Storage\_Interface.cpp)}
+
+\end{DoxyCode}
+
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md16}{}\doxysubsubsection{\texorpdfstring{{\bfseries{Step 5\+: Build the Project Using CMake}}}{{\bfseries{Step 5\+: Build the Project Using CMake}}}}\label{md__r_e_a_d_m_e_autotoc_md16}
+To compile the project, run\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cmake\ -\/-\/build\ ./build\ -\/-\/config\ Debug}
+
+\end{DoxyCode}
+ Or, using {\bfseries{VS Code Tasks}}\+:
+\begin{DoxyEnumerate}
+\item Open the {\bfseries{Command Palette}} ({\bfseries{Ctrl + Shift + P}}).
+\item Search for {\bfseries{Tasks\+: Run Build Task}}.
+\item Select {\bfseries{Build Debug}}.
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md17}{}\doxysubsubsection{\texorpdfstring{{\bfseries{Step 6\+: Run the Application}}}{{\bfseries{Step 6\+: Run the Application}}}}\label{md__r_e_a_d_m_e_autotoc_md17}
+After building, you can run the executable\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./build/Debug/Book\_Library}
+
+\end{DoxyCode}
+ Or, in Windows\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{build\(\backslash\)Debug\(\backslash\)Book\_Library.exe}
+
+\end{DoxyCode}
+
+
+Alternatively, use {\bfseries{VS Code Debugging}}\+:
+\begin{DoxyEnumerate}
+\item Open the {\bfseries{Run and Debug}} panel ({\bfseries{Ctrl + Shift + D}}).
+\item Select {\bfseries{Run Book (Debug)}}.
+\item Click the {\bfseries{Start Debugging}} button ({\bfseries{F5}}).
+\end{DoxyEnumerate}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md19}{}\doxysubsection{\texorpdfstring{Running the Application}{Running the Application}}\label{md__r_e_a_d_m_e_autotoc_md19}
+Once the project is built, run the program using one of the following methods\+:
+\begin{DoxyEnumerate}
+\item {\bfseries{Via terminal\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./build/Debug/Book\_Library}
+
+\end{DoxyCode}
+ \texorpdfstring{$\ast$}{*}(On Windows, use {\ttfamily build\textbackslash{}Debug\textbackslash{}Book\+\_\+\+Library.\+exe} instead.)\texorpdfstring{$\ast$}{*}
+\item {\bfseries{Via VS Code\+:}}
+\begin{DoxyItemize}
+\item Open {\bfseries{Run and Debug Panel}} ({\bfseries{Ctrl + Shift + D}}).
+\item Select {\bfseries{Run Book (Debug)}}.
+\item Click {\bfseries{Start Debugging (F5)}}.
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md21}{}\doxysubsection{\texorpdfstring{Troubleshooting}{Troubleshooting}}\label{md__r_e_a_d_m_e_autotoc_md21}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md22}{}\doxysubsubsection{\texorpdfstring{{\bfseries{CMake Errors}}}{{\bfseries{CMake Errors}}}}\label{md__r_e_a_d_m_e_autotoc_md22}
+{\bfseries{Solution\+:}} Ensure CMake is installed and run\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cmake\ -\/-\/version}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md23}{}\doxysubsubsection{\texorpdfstring{{\bfseries{Cannot Open File ‘book\+\_\+\+DB.\+txt’}}}{{\bfseries{Cannot Open File ‘book\+\_\+\+DB.\+txt’}}}}\label{md__r_e_a_d_m_e_autotoc_md23}
+{\bfseries{Solution\+:}} Ensure the {\ttfamily data/} directory exists and contains {\ttfamily book\+\_\+\+DB.\+txt}.\hypertarget{md__r_e_a_d_m_e_autotoc_md24}{}\doxysubsubsection{\texorpdfstring{{\bfseries{Execution Permission Denied}}}{{\bfseries{Execution Permission Denied}}}}\label{md__r_e_a_d_m_e_autotoc_md24}
+{\bfseries{Solution\+:}} If running on Linux/mac\+OS, grant execution permissions\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chmod\ +x\ build/Debug/Book\_Library}
+
+\end{DoxyCode}
+
+
+\DoxyHorRuler{0}
+ 

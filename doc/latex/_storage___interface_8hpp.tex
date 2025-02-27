@@ -1,0 +1,41 @@
+\doxysection{include/\+Storage\+\_\+\+Interface.hpp File Reference}
+\hypertarget{_storage___interface_8hpp}{}\label{_storage___interface_8hpp}\index{include/Storage\_Interface.hpp@{include/Storage\_Interface.hpp}}
+
+
+Interface for handling persistent storage of books.  
+
+
+{\ttfamily \#include "{}Constant\+\_\+\+Headers.\+hpp"{}}\newline
+{\ttfamily \#include "{}Book\+\_\+\+Interface.\+hpp"{}}\newline
+Include dependency graph for Storage\+\_\+\+Interface.\+hpp\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_storage___interface}{Storage\+\_\+\+Interface}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for handling persistent storage of books. 
+
+This file defines the \doxylink{class_storage___interface}{Storage\+\_\+\+Interface} class, responsible for reading and writing book data to and from a file. It ensures data persistence for the library system.
+
+Data Structure Used\+: std\+::vector$<$\+Book\+\_\+\+Interface$>$
+\begin{DoxyItemize}
+\item Books are stored dynamically in a vector and read/written to a file.
+\item File storage is handled using std\+::ifstream and std\+::ofstream.
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Ayuba Tahiru 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2025-\/02-\/25 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_storage___interface_8hpp_source}{Storage\+\_\+\+Interface.\+hpp}}.
+

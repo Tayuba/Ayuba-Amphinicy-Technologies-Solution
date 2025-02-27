@@ -1,0 +1,39 @@
+\doxysection{Library\+\_\+\+Interface.\+hpp}
+\hypertarget{_library___interface_8hpp_source}{}\label{_library___interface_8hpp_source}\index{include/Library\_Interface.hpp@{include/Library\_Interface.hpp}}
+\mbox{\hyperlink{_library___interface_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00016}00016\ \textcolor{preprocessor}{\#ifndef\ LIBRARY\_INTERFACE\_H}}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00017}00017\ \textcolor{preprocessor}{\#define\ LIBRARY\_INTERFACE\_H}}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00019}00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_constant___headers_8hpp}{Constant\_Headers.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00020}00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_storage___interface_8hpp}{Storage\_Interface.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00021}00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_book___interface_8hpp}{Book\_Interface.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00023}\mbox{\hyperlink{class_library___interface}{00023}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_library___interface_ab6516a7fb966cff9f5837632e3498821}{Library\_Interface}}\{}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00024}00024\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00025}00025\ \ \ \ \ std::vector<Book\_Interface>\ books;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00026}00026\ \ \ \ \ \mbox{\hyperlink{class_storage___interface}{Storage\_Interface}}\&\ storage;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00028}00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00033}00033\ \ \ \ \ \mbox{\hyperlink{class_library___interface_ab6516a7fb966cff9f5837632e3498821}{Library\_Interface}}(\mbox{\hyperlink{class_storage___interface}{Storage\_Interface}}\&\ storage);}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00039}00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_library___interface_a173b3894c459324f6a46aa717f2cfa61}{addBook}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_book___interface}{Book\_Interface}}\&\ book);}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00045}00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_library___interface_a97d10e79c3082d9850c25140fba5ac72}{removeBook}}(\textcolor{keyword}{const}\ std::string\&\ title);}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00050}00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_library___interface_a64918c15bdefae68a7f4b551bb84726e}{removeAllBooks}}();}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00056}00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_library___interface_a13de47f4bf30732557c742ae69179c33}{searchBook}}(\textcolor{keyword}{const}\ std::string\&\ query)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00062}00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_library___interface_ad168713bc54139b612073a5f98643f98}{borrowBook}}(\textcolor{keyword}{const}\ std::string\&\ title);}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00068}00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_library___interface_a85dcb80ae478fe84946a56bea486d227}{returnBook}}(\textcolor{keyword}{const}\ std::string\&\ title);}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00073}00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_library___interface_afe1165575fbce88478a33fd099113208}{listBooks}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00074}00074\ \};}
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_library___interface_8hpp_source_l00076}00076\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

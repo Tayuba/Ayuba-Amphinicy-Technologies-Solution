@@ -1,0 +1,197 @@
+\doxysection{Book\+\_\+\+Interface Class Reference}
+\hypertarget{class_book___interface}{}\label{class_book___interface}\index{Book\_Interface@{Book\_Interface}}
+
+
+Represents a book in the library system.  
+
+
+
+
+{\ttfamily \#include $<$Book\+\_\+\+Interface.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_book___interface_aafb6247150a5ed616b301467145f6ad5}{Book\+\_\+\+Interface}} (const std\+::string \&title, const std\+::string \&author, int year)
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_book___interface}{Book\+\_\+\+Interface} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_book___interface_ad1748dbf83065fb5213bf24703d76179}{get\+Title}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the title of the book. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_book___interface_a4bc5750db08d7e47e2dc58b7e701d35c}{get\+Author}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the author\textquotesingle{}s name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_book___interface_ade2b3ea2492c2bf5597404ffe2cda89d}{get\+Borrowed\+Status}} () const
+\begin{DoxyCompactList}\small\item\em Checks if the book is currently borrowed. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_book___interface_a039210c63b9635f63d4fde7de264384a}{get\+Year}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the publication year of the book. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_book___interface_a279840fb13e27deb89b1e83f1ed3131c}{borrow\+Book}} ()
+\begin{DoxyCompactList}\small\item\em Marks the book as borrowed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_book___interface_ae3e6bdb45b961ef3fac01cd07034fd6a}{return\+Book}} ()
+\begin{DoxyCompactList}\small\item\em Marks the book as returned. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_book___interface_a8f56fc2953c34907656b02b1954c8e25}{to\+String}} () const
+\begin{DoxyCompactList}\small\item\em Converts book details into a string format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a book in the library system. 
+
+This class provides methods to retrieve book details, check borrowing status, and manage borrowing and returning operations. 
+
+Definition at line \mbox{\hyperlink{_book___interface_8hpp_source_l00020}{20}} of file \mbox{\hyperlink{_book___interface_8hpp_source}{Book\+\_\+\+Interface.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_book___interface_aafb6247150a5ed616b301467145f6ad5}\index{Book\_Interface@{Book\_Interface}!Book\_Interface@{Book\_Interface}}
+\index{Book\_Interface@{Book\_Interface}!Book\_Interface@{Book\_Interface}}
+\doxysubsubsection{\texorpdfstring{Book\_Interface()}{Book\_Interface()}}
+{\footnotesize\ttfamily \label{class_book___interface_aafb6247150a5ed616b301467145f6ad5} 
+Book\+\_\+\+Interface\+::\+Book\+\_\+\+Interface (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title}{, }\item[{const std\+::string \&}]{author}{, }\item[{int}]{year}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{class_book___interface}{Book\+\_\+\+Interface} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the book. \\
+\hline
+{\em author} & The author\textquotesingle{}s name. \\
+\hline
+{\em year} & The publication year. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_book___interface_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{_book___interface_8cpp_source}{Book\+\_\+\+Interface.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_book___interface_a279840fb13e27deb89b1e83f1ed3131c}\index{Book\_Interface@{Book\_Interface}!borrowBook@{borrowBook}}
+\index{borrowBook@{borrowBook}!Book\_Interface@{Book\_Interface}}
+\doxysubsubsection{\texorpdfstring{borrowBook()}{borrowBook()}}
+{\footnotesize\ttfamily \label{class_book___interface_a279840fb13e27deb89b1e83f1ed3131c} 
+void Book\+\_\+\+Interface\+::borrow\+Book (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Marks the book as borrowed. 
+
+If the book is already borrowed, a warning message is displayed. 
+
+Definition at line \mbox{\hyperlink{_book___interface_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{_book___interface_8cpp_source}{Book\+\_\+\+Interface.\+cpp}}.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\Hypertarget{class_book___interface_a4bc5750db08d7e47e2dc58b7e701d35c}\index{Book\_Interface@{Book\_Interface}!getAuthor@{getAuthor}}
+\index{getAuthor@{getAuthor}!Book\_Interface@{Book\_Interface}}
+\doxysubsubsection{\texorpdfstring{getAuthor()}{getAuthor()}}
+{\footnotesize\ttfamily \label{class_book___interface_a4bc5750db08d7e47e2dc58b7e701d35c} 
+std\+::string Book\+\_\+\+Interface\+::get\+Author (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the author\textquotesingle{}s name. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The book\textquotesingle{}s author. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_book___interface_8cpp_source_l00041}{41}} of file \mbox{\hyperlink{_book___interface_8cpp_source}{Book\+\_\+\+Interface.\+cpp}}.
+
+\Hypertarget{class_book___interface_ade2b3ea2492c2bf5597404ffe2cda89d}\index{Book\_Interface@{Book\_Interface}!getBorrowedStatus@{getBorrowedStatus}}
+\index{getBorrowedStatus@{getBorrowedStatus}!Book\_Interface@{Book\_Interface}}
+\doxysubsubsection{\texorpdfstring{getBorrowedStatus()}{getBorrowedStatus()}}
+{\footnotesize\ttfamily \label{class_book___interface_ade2b3ea2492c2bf5597404ffe2cda89d} 
+bool Book\+\_\+\+Interface\+::get\+Borrowed\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Checks if the book is currently borrowed. 
+
+\begin{DoxyReturn}{Returns}
+true If the book is borrowed. 
+
+false If the book is available. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_book___interface_8cpp_source_l00051}{51}} of file \mbox{\hyperlink{_book___interface_8cpp_source}{Book\+\_\+\+Interface.\+cpp}}.
+
+\Hypertarget{class_book___interface_ad1748dbf83065fb5213bf24703d76179}\index{Book\_Interface@{Book\_Interface}!getTitle@{getTitle}}
+\index{getTitle@{getTitle}!Book\_Interface@{Book\_Interface}}
+\doxysubsubsection{\texorpdfstring{getTitle()}{getTitle()}}
+{\footnotesize\ttfamily \label{class_book___interface_ad1748dbf83065fb5213bf24703d76179} 
+std\+::string Book\+\_\+\+Interface\+::get\+Title (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the title of the book. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The book\textquotesingle{}s title. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_book___interface_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{_book___interface_8cpp_source}{Book\+\_\+\+Interface.\+cpp}}.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{class_book___interface_a039210c63b9635f63d4fde7de264384a}\index{Book\_Interface@{Book\_Interface}!getYear@{getYear}}
+\index{getYear@{getYear}!Book\_Interface@{Book\_Interface}}
+\doxysubsubsection{\texorpdfstring{getYear()}{getYear()}}
+{\footnotesize\ttfamily \label{class_book___interface_a039210c63b9635f63d4fde7de264384a} 
+int Book\+\_\+\+Interface\+::get\+Year (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the publication year of the book. 
+
+\begin{DoxyReturn}{Returns}
+int The book\textquotesingle{}s publication year. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_book___interface_8cpp_source_l00080}{80}} of file \mbox{\hyperlink{_book___interface_8cpp_source}{Book\+\_\+\+Interface.\+cpp}}.
+
+\Hypertarget{class_book___interface_ae3e6bdb45b961ef3fac01cd07034fd6a}\index{Book\_Interface@{Book\_Interface}!returnBook@{returnBook}}
+\index{returnBook@{returnBook}!Book\_Interface@{Book\_Interface}}
+\doxysubsubsection{\texorpdfstring{returnBook()}{returnBook()}}
+{\footnotesize\ttfamily \label{class_book___interface_ae3e6bdb45b961ef3fac01cd07034fd6a} 
+void Book\+\_\+\+Interface\+::return\+Book (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Marks the book as returned. 
+
+If the book was not borrowed, a warning message is displayed. 
+
+Definition at line \mbox{\hyperlink{_book___interface_8cpp_source_l00071}{71}} of file \mbox{\hyperlink{_book___interface_8cpp_source}{Book\+\_\+\+Interface.\+cpp}}.
+
+\Hypertarget{class_book___interface_a8f56fc2953c34907656b02b1954c8e25}\index{Book\_Interface@{Book\_Interface}!toString@{toString}}
+\index{toString@{toString}!Book\_Interface@{Book\_Interface}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_book___interface_a8f56fc2953c34907656b02b1954c8e25} 
+std\+::string Book\+\_\+\+Interface\+::to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Converts book details into a string format. 
+
+Converts book details into a formatted string representation.
+
+\begin{DoxyReturn}{Returns}
+std\+::string A formatted string representation of the book.
+
+std\+::string A formatted string containing book details. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_book___interface_8cpp_source_l00089}{89}} of file \mbox{\hyperlink{_book___interface_8cpp_source}{Book\+\_\+\+Interface.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_book___interface_8hpp}{Book\+\_\+\+Interface.\+hpp}}\item 
+src/\mbox{\hyperlink{_book___interface_8cpp}{Book\+\_\+\+Interface.\+cpp}}\end{DoxyCompactItemize}

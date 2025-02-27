@@ -1,0 +1,24 @@
+\doxysection{src/\+Book\+\_\+\+Interface.cpp File Reference}
+\hypertarget{_book___interface_8cpp}{}\label{_book___interface_8cpp}\index{src/Book\_Interface.cpp@{src/Book\_Interface.cpp}}
+
+
+Implementation of the \doxylink{class_book___interface}{Book\+\_\+\+Interface} class.  
+
+
+{\ttfamily \#include "{}../include/\+Book\+\_\+\+Interface.\+hpp"{}}\newline
+Include dependency graph for Book\+\_\+\+Interface.\+cpp\+:
+% FIG 0
+
+
+\doxysubsection{Detailed Description}
+Implementation of the \doxylink{class_book___interface}{Book\+\_\+\+Interface} class. 
+
+This file implements the \doxylink{class_book___interface}{Book\+\_\+\+Interface} class, defining methods for retrieving book details and managing borrowing status.
+
+Data Structure Used\+: Plain class with member variables.
+\begin{DoxyItemize}
+\item O(1) access time for all operations since data is stored in class members. 
+\end{DoxyItemize}
+
+Definition in file \mbox{\hyperlink{_book___interface_8cpp_source}{Book\+\_\+\+Interface.\+cpp}}.
+

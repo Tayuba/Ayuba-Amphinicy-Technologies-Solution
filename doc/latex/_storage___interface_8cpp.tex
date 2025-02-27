@@ -1,0 +1,25 @@
+\doxysection{src/\+Storage\+\_\+\+Interface.cpp File Reference}
+\hypertarget{_storage___interface_8cpp}{}\label{_storage___interface_8cpp}\index{src/Storage\_Interface.cpp@{src/Storage\_Interface.cpp}}
+
+
+Implementation of the \doxylink{class_storage___interface}{Storage\+\_\+\+Interface} class.  
+
+
+{\ttfamily \#include "{}../include/\+Storage\+\_\+\+Interface.\+hpp"{}}\newline
+Include dependency graph for Storage\+\_\+\+Interface.\+cpp\+:
+% FIG 0
+
+
+\doxysubsection{Detailed Description}
+Implementation of the \doxylink{class_storage___interface}{Storage\+\_\+\+Interface} class. 
+
+This file implements methods for reading and writing book data to a file. It ensures that the library system\textquotesingle{}s books are persistently stored between sessions.
+
+Data Structure Used\+: std\+::vector$<$\+Book\+\_\+\+Interface$>$
+\begin{DoxyItemize}
+\item Uses dynamic storage in a vector for easy manipulation.
+\item Reads and writes data using std\+::ifstream and std\+::ofstream. 
+\end{DoxyItemize}
+
+Definition in file \mbox{\hyperlink{_storage___interface_8cpp_source}{Storage\+\_\+\+Interface.\+cpp}}.
+

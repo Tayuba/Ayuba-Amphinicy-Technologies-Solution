@@ -1,0 +1,256 @@
+\doxysection{Library\+\_\+\+Interface Class Reference}
+\hypertarget{class_library___interface}{}\label{class_library___interface}\index{Library\_Interface@{Library\_Interface}}
+
+
+{\ttfamily \#include $<$Library\+\_\+\+Interface.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_library___interface_ab6516a7fb966cff9f5837632e3498821}{Library\+\_\+\+Interface}} (\mbox{\hyperlink{class_storage___interface}{Storage\+\_\+\+Interface}} \&storage)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_library___interface}{Library\+\_\+\+Interface} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library___interface_a173b3894c459324f6a46aa717f2cfa61}{add\+Book}} (const \mbox{\hyperlink{class_book___interface}{Book\+\_\+\+Interface}} \&book)
+\begin{DoxyCompactList}\small\item\em Adds a new book to the library. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library___interface_a97d10e79c3082d9850c25140fba5ac72}{remove\+Book}} (const std\+::string \&title)
+\begin{DoxyCompactList}\small\item\em Removes a book from the library by title. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library___interface_a64918c15bdefae68a7f4b551bb84726e}{remove\+All\+Books}} ()
+\begin{DoxyCompactList}\small\item\em Removes all books from the library while keeping column headers in storage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library___interface_a13de47f4bf30732557c742ae69179c33}{search\+Book}} (const std\+::string \&query) const
+\begin{DoxyCompactList}\small\item\em Searches for a book by title, author, year, or row number. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library___interface_ad168713bc54139b612073a5f98643f98}{borrow\+Book}} (const std\+::string \&title)
+\begin{DoxyCompactList}\small\item\em Borrows a book from the library. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library___interface_a85dcb80ae478fe84946a56bea486d227}{return\+Book}} (const std\+::string \&title)
+\begin{DoxyCompactList}\small\item\em Returns a borrowed book to the library. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library___interface_afe1165575fbce88478a33fd099113208}{list\+Books}} () const
+\begin{DoxyCompactList}\small\item\em Lists all books currently in the library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_library___interface_8hpp_source_l00023}{23}} of file \mbox{\hyperlink{_library___interface_8hpp_source}{Library\+\_\+\+Interface.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_library___interface_ab6516a7fb966cff9f5837632e3498821}\index{Library\_Interface@{Library\_Interface}!Library\_Interface@{Library\_Interface}}
+\index{Library\_Interface@{Library\_Interface}!Library\_Interface@{Library\_Interface}}
+\doxysubsubsection{\texorpdfstring{Library\_Interface()}{Library\_Interface()}}
+{\footnotesize\ttfamily \label{class_library___interface_ab6516a7fb966cff9f5837632e3498821} 
+Library\+\_\+\+Interface\+::\+Library\+\_\+\+Interface (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_storage___interface}{Storage\+\_\+\+Interface}} \&}]{storage}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_library___interface}{Library\+\_\+\+Interface} object. 
+
+Constructs a \doxylink{class_library___interface}{Library\+\_\+\+Interface} object and loads books from storage.
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage} & Reference to a \doxylink{class_storage___interface}{Storage\+\_\+\+Interface} object for book storage management.\\
+\hline
+\end{DoxyParams}
+Uses a vector for book storage, allowing dynamic resizing. Complexity\+: O(n) due to file parsing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage} & Reference to a \doxylink{class_storage___interface}{Storage\+\_\+\+Interface} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_library___interface_8cpp_source_l00026}{26}} of file \mbox{\hyperlink{_library___interface_8cpp_source}{Library\+\_\+\+Interface.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_library___interface_a173b3894c459324f6a46aa717f2cfa61}\index{Library\_Interface@{Library\_Interface}!addBook@{addBook}}
+\index{addBook@{addBook}!Library\_Interface@{Library\_Interface}}
+\doxysubsubsection{\texorpdfstring{addBook()}{addBook()}}
+{\footnotesize\ttfamily \label{class_library___interface_a173b3894c459324f6a46aa717f2cfa61} 
+void Library\+\_\+\+Interface\+::add\+Book (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_book___interface}{Book\+\_\+\+Interface}} \&}]{book}{}\end{DoxyParamCaption})}
+
+
+
+Adds a new book to the library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em book} & The book to be added.\\
+\hline
+\end{DoxyParams}
+Uses std\+::vector\+::push\+\_\+back() for insertion. Complexity\+: O(1) (Amortized constant time for insertion at the end).
+
+
+\begin{DoxyParams}{Parameters}
+{\em book} & The book to be added. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_library___interface_8cpp_source_l00057}{57}} of file \mbox{\hyperlink{_library___interface_8cpp_source}{Library\+\_\+\+Interface.\+cpp}}.
+
+Here is the call graph for this function\+:
+% FIG 0
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{class_library___interface_ad168713bc54139b612073a5f98643f98}\index{Library\_Interface@{Library\_Interface}!borrowBook@{borrowBook}}
+\index{borrowBook@{borrowBook}!Library\_Interface@{Library\_Interface}}
+\doxysubsubsection{\texorpdfstring{borrowBook()}{borrowBook()}}
+{\footnotesize\ttfamily \label{class_library___interface_ad168713bc54139b612073a5f98643f98} 
+void Library\+\_\+\+Interface\+::borrow\+Book (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title}{}\end{DoxyParamCaption})}
+
+
+
+Borrows a book from the library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the book to be borrowed.\\
+\hline
+\end{DoxyParams}
+Uses linear search (O(n)) and updates a flag (O(1)).
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the book to be borrowed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_library___interface_8cpp_source_l00148}{148}} of file \mbox{\hyperlink{_library___interface_8cpp_source}{Library\+\_\+\+Interface.\+cpp}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{class_library___interface_afe1165575fbce88478a33fd099113208}\index{Library\_Interface@{Library\_Interface}!listBooks@{listBooks}}
+\index{listBooks@{listBooks}!Library\_Interface@{Library\_Interface}}
+\doxysubsubsection{\texorpdfstring{listBooks()}{listBooks()}}
+{\footnotesize\ttfamily \label{class_library___interface_afe1165575fbce88478a33fd099113208} 
+void Library\+\_\+\+Interface\+::list\+Books (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Lists all books currently in the library. 
+
+Uses iteration (O(n)). 
+
+Definition at line \mbox{\hyperlink{_library___interface_8cpp_source_l00190}{190}} of file \mbox{\hyperlink{_library___interface_8cpp_source}{Library\+\_\+\+Interface.\+cpp}}.
+
+Here is the caller graph for this function\+:
+% FIG 4
+\Hypertarget{class_library___interface_a64918c15bdefae68a7f4b551bb84726e}\index{Library\_Interface@{Library\_Interface}!removeAllBooks@{removeAllBooks}}
+\index{removeAllBooks@{removeAllBooks}!Library\_Interface@{Library\_Interface}}
+\doxysubsubsection{\texorpdfstring{removeAllBooks()}{removeAllBooks()}}
+{\footnotesize\ttfamily \label{class_library___interface_a64918c15bdefae68a7f4b551bb84726e} 
+void Library\+\_\+\+Interface\+::remove\+All\+Books (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Removes all books from the library while keeping column headers in storage. 
+
+Removes all books from the library.
+
+Uses std\+::vector\+::clear(), which has O(1) complexity. 
+
+Definition at line \mbox{\hyperlink{_library___interface_8cpp_source_l00091}{91}} of file \mbox{\hyperlink{_library___interface_8cpp_source}{Library\+\_\+\+Interface.\+cpp}}.
+
+Here is the caller graph for this function\+:
+% FIG 5
+\Hypertarget{class_library___interface_a97d10e79c3082d9850c25140fba5ac72}\index{Library\_Interface@{Library\_Interface}!removeBook@{removeBook}}
+\index{removeBook@{removeBook}!Library\_Interface@{Library\_Interface}}
+\doxysubsubsection{\texorpdfstring{removeBook()}{removeBook()}}
+{\footnotesize\ttfamily \label{class_library___interface_a97d10e79c3082d9850c25140fba5ac72} 
+void Library\+\_\+\+Interface\+::remove\+Book (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title}{}\end{DoxyParamCaption})}
+
+
+
+Removes a book from the library by title. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the book to be removed.\\
+\hline
+\end{DoxyParams}
+Uses linear search (O(n)) and std\+::vector\+::erase() (O(n)).
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the book to be removed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_library___interface_8cpp_source_l00071}{71}} of file \mbox{\hyperlink{_library___interface_8cpp_source}{Library\+\_\+\+Interface.\+cpp}}.
+
+Here is the call graph for this function\+:
+% FIG 6
+Here is the caller graph for this function\+:
+% FIG 7
+\Hypertarget{class_library___interface_a85dcb80ae478fe84946a56bea486d227}\index{Library\_Interface@{Library\_Interface}!returnBook@{returnBook}}
+\index{returnBook@{returnBook}!Library\_Interface@{Library\_Interface}}
+\doxysubsubsection{\texorpdfstring{returnBook()}{returnBook()}}
+{\footnotesize\ttfamily \label{class_library___interface_a85dcb80ae478fe84946a56bea486d227} 
+void Library\+\_\+\+Interface\+::return\+Book (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title}{}\end{DoxyParamCaption})}
+
+
+
+Returns a borrowed book to the library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the book to be returned.\\
+\hline
+\end{DoxyParams}
+Uses linear search (O(n)) and updates a flag (O(1)).
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the book to be returned. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_library___interface_8cpp_source_l00170}{170}} of file \mbox{\hyperlink{_library___interface_8cpp_source}{Library\+\_\+\+Interface.\+cpp}}.
+
+Here is the call graph for this function\+:
+% FIG 8
+Here is the caller graph for this function\+:
+% FIG 9
+\Hypertarget{class_library___interface_a13de47f4bf30732557c742ae69179c33}\index{Library\_Interface@{Library\_Interface}!searchBook@{searchBook}}
+\index{searchBook@{searchBook}!Library\_Interface@{Library\_Interface}}
+\doxysubsubsection{\texorpdfstring{searchBook()}{searchBook()}}
+{\footnotesize\ttfamily \label{class_library___interface_a13de47f4bf30732557c742ae69179c33} 
+void Library\+\_\+\+Interface\+::search\+Book (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{query}{}\end{DoxyParamCaption}) const}
+
+
+
+Searches for a book by title, author, year, or row number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & The search term (case-\/insensitive).\\
+\hline
+\end{DoxyParams}
+Uses linear search (O(n)).
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & The search term. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_library___interface_8cpp_source_l00105}{105}} of file \mbox{\hyperlink{_library___interface_8cpp_source}{Library\+\_\+\+Interface.\+cpp}}.
+
+Here is the call graph for this function\+:
+% FIG 10
+Here is the caller graph for this function\+:
+% FIG 11
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_library___interface_8hpp}{Library\+\_\+\+Interface.\+hpp}}\item 
+src/\mbox{\hyperlink{_library___interface_8cpp}{Library\+\_\+\+Interface.\+cpp}}\end{DoxyCompactItemize}

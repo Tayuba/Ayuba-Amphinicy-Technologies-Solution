@@ -1,0 +1,110 @@
+\doxysection{Storage\+\_\+\+Interface Class Reference}
+\hypertarget{class_storage___interface}{}\label{class_storage___interface}\index{Storage\_Interface@{Storage\_Interface}}
+
+
+{\ttfamily \#include $<$Storage\+\_\+\+Interface.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_storage___interface_a5a384b010e3575b5eeb26b14c3aae7bc}{Storage\+\_\+\+Interface}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_storage___interface}{Storage\+\_\+\+Interface} object with the specified file. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_book___interface}{Book\+\_\+\+Interface}} $>$ \mbox{\hyperlink{class_storage___interface_a79e8e193c31fed0acd409b8413908c29}{load\+Books}} ()
+\begin{DoxyCompactList}\small\item\em Loads books from the storage file into a vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_storage___interface_a80b5f5d5420d175d1dfefbbbba63b6b5}{save\+Books}} (const std\+::vector$<$ \mbox{\hyperlink{class_book___interface}{Book\+\_\+\+Interface}} $>$ \&books)
+\begin{DoxyCompactList}\small\item\em Saves a collection of books to the storage file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_storage___interface_8hpp_source_l00022}{22}} of file \mbox{\hyperlink{_storage___interface_8hpp_source}{Storage\+\_\+\+Interface.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_storage___interface_a5a384b010e3575b5eeb26b14c3aae7bc}\index{Storage\_Interface@{Storage\_Interface}!Storage\_Interface@{Storage\_Interface}}
+\index{Storage\_Interface@{Storage\_Interface}!Storage\_Interface@{Storage\_Interface}}
+\doxysubsubsection{\texorpdfstring{Storage\_Interface()}{Storage\_Interface()}}
+{\footnotesize\ttfamily \label{class_storage___interface_a5a384b010e3575b5eeb26b14c3aae7bc} 
+Storage\+\_\+\+Interface\+::\+Storage\+\_\+\+Interface (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_storage___interface}{Storage\+\_\+\+Interface} object with the specified file. 
+
+Constructs a \doxylink{class_storage___interface}{Storage\+\_\+\+Interface} object with a specified storage file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file used for storing book data. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_storage___interface_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{_storage___interface_8cpp_source}{Storage\+\_\+\+Interface.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_storage___interface_a79e8e193c31fed0acd409b8413908c29}\index{Storage\_Interface@{Storage\_Interface}!loadBooks@{loadBooks}}
+\index{loadBooks@{loadBooks}!Storage\_Interface@{Storage\_Interface}}
+\doxysubsubsection{\texorpdfstring{loadBooks()}{loadBooks()}}
+{\footnotesize\ttfamily \label{class_storage___interface_a79e8e193c31fed0acd409b8413908c29} 
+std\+::vector$<$ \mbox{\hyperlink{class_book___interface}{Book\+\_\+\+Interface}} $>$ Storage\+\_\+\+Interface\+::load\+Books (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Loads books from the storage file into a vector. 
+
+Reads book data from the file, parses it, and constructs a vector of \doxylink{class_book___interface}{Book\+\_\+\+Interface} objects.
+
+Complexity\+: O(n).
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Book\+\_\+\+Interface$>$ A list of books retrieved from storage. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_storage___interface_8cpp_source_l00035}{35}} of file \mbox{\hyperlink{_storage___interface_8cpp_source}{Storage\+\_\+\+Interface.\+cpp}}.
+
+Here is the call graph for this function\+:
+% FIG 0
+\Hypertarget{class_storage___interface_a80b5f5d5420d175d1dfefbbbba63b6b5}\index{Storage\_Interface@{Storage\_Interface}!saveBooks@{saveBooks}}
+\index{saveBooks@{saveBooks}!Storage\_Interface@{Storage\_Interface}}
+\doxysubsubsection{\texorpdfstring{saveBooks()}{saveBooks()}}
+{\footnotesize\ttfamily \label{class_storage___interface_a80b5f5d5420d175d1dfefbbbba63b6b5} 
+void Storage\+\_\+\+Interface\+::save\+Books (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_book___interface}{Book\+\_\+\+Interface}} $>$ \&}]{books}{}\end{DoxyParamCaption})}
+
+
+
+Saves a collection of books to the storage file. 
+
+Writes the book data to the file in a structured format to ensure persistence.
+
+Complexity\+: O(n)d.
+
+
+\begin{DoxyParams}{Parameters}
+{\em books} & A vector containing all books to be saved.\\
+\hline
+\end{DoxyParams}
+Writes the book data to the file in a structured format to ensure persistence.
+
+Complexity\+: O(n).
+
+
+\begin{DoxyParams}{Parameters}
+{\em books} & A vector containing all books to be saved. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_storage___interface_8cpp_source_l00083}{83}} of file \mbox{\hyperlink{_storage___interface_8cpp_source}{Storage\+\_\+\+Interface.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_storage___interface_8hpp}{Storage\+\_\+\+Interface.\+hpp}}\item 
+src/\mbox{\hyperlink{_storage___interface_8cpp}{Storage\+\_\+\+Interface.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,27 @@
+\doxysection{Storage\+\_\+\+Interface.\+hpp}
+\hypertarget{_storage___interface_8hpp_source}{}\label{_storage___interface_8hpp_source}\index{include/Storage\_Interface.hpp@{include/Storage\_Interface.hpp}}
+\mbox{\hyperlink{_storage___interface_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00016}00016\ \textcolor{preprocessor}{\#ifndef\ STORAGE\_INTERFACE\_H}}
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00017}00017\ \textcolor{preprocessor}{\#define\ STORAGE\_INTERFACE\_H}}
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00019}00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_constant___headers_8hpp}{Constant\_Headers.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00020}00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_book___interface_8hpp}{Book\_Interface.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00022}\mbox{\hyperlink{class_storage___interface}{00022}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_storage___interface_a5a384b010e3575b5eeb26b14c3aae7bc}{Storage\_Interface}}\ \{}
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00023}00023\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00024}00024\ \ \ \ \ \ \ \ \ std::string\ storageFile;}
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00025}00025\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00026}00026\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00032}00032\ \ \ \ \ \mbox{\hyperlink{class_storage___interface_a5a384b010e3575b5eeb26b14c3aae7bc}{Storage\_Interface}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00044}00044\ \ \ \ \ std::vector<Book\_Interface>\ \mbox{\hyperlink{class_storage___interface_a79e8e193c31fed0acd409b8413908c29}{loadBooks}}();}
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00045}00045\ \ }
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00056}00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_storage___interface_a80b5f5d5420d175d1dfefbbbba63b6b5}{saveBooks}}(\textcolor{keyword}{const}\ std::vector<Book\_Interface>\&\ books);}
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00057}00057\ \};}
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_storage___interface_8hpp_source_l00059}00059\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
