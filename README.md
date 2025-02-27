@@ -45,8 +45,7 @@ You can set up this project by **cloning from GitHub** or **downloading it manua
 ### **Clone via GitHub** (Recommended)
 ```sh
 # Open a terminal and run:
-git clone https://github.com/YOUR_GITHUB_USERNAME/Library-Management-System.git
-cd Library-Management-System
+git clone https://github.com/Tayuba/Ayuba-Amphinicy-Technologies-Solution.git
 ```
 
 ### **Download Manually**
